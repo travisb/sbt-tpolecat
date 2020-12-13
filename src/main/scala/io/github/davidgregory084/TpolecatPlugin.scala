@@ -147,14 +147,12 @@ object TpolecatPlugin extends AutoPlugin {
 
     val filterConsoleScalacOptions = { options: Seq[String] =>
       options.filterNot(Set(
-        "-Werror",
         "-Wdead-code",
         "-Wunused:imports",
         "-Ywarn-unused",
         "-Ywarn-unused:imports",
         "-Ywarn-unused-import",
         "-Ywarn-dead-code",
-        "-Xfatal-warnings"
       ))
     }
   }
